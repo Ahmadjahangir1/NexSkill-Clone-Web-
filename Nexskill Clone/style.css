@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color:white;
+  color:gray;
+  border: 100px;
+  border-color: black;
+}
+/* Slider Container */
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 600px;
+    margin: auto;
+    overflow: hidden;
+    object-fit: cover;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+
+  }
+
+  /* Slide */
+  .slide {
+    display: none;
+  }
+  
+  .slide.active {
+    display: block;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    
+  }
+  
+  /* Next & Previous Buttons */
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color:mate black;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    user-select: none;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  .prev:hover, .next:hover {
+    color:#632434;
+  }
+  
